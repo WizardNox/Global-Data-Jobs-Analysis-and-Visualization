@@ -71,7 +71,7 @@ Below are the key dashboards and insights derived:
 
 #### Key Insights:
 
-* Senior Data Scientist (~$156K) and Machine Learning Engineer (~$155K) are the top-paying roles
+* Senior Data Scientist ($156K) and Machine Learning Engineer ($155K) are the top-paying roles
 * Followed by Senior Data Engineer and Software Engineer roles
 * Entry-level roles like Data Analyst (~$90K) are significantly lower
 * Countries like the USA, UK, and Germany offer higher salaries
