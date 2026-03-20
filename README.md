@@ -1,20 +1,21 @@
-# 🌍 Global Data Jobs Analysis (EDA)
+# Global Data Jobs Analysis (EDA) and Visualization (Power BI)
 
-## 📌 Project Overview
+## Project Overview
 
-This project performs an in-depth **Exploratory Data Analysis (EDA)** on a global dataset of data-related job postings. The goal is to uncover meaningful insights about:
+The Global Data Jobs Analysis project is an end-to-end exploratory data analysis (EDA) and visualization study of the global data job market. The objective of this project is to extract meaningful insights from real-world job posting data and understand how factors such as role, salary, location, skills, and work type influence compensation and hiring trends.
 
-* Salary distributions
-  n- Skill-based salary premiums
-* Geographic salary differences (India vs USA)
-* Remote vs non-remote compensation
-* Data cleaning and statistical validation techniques
+The project combines Python-based data analysis with Power BI dashboards to deliver both statistical rigor and business-oriented insights. Using Python, the dataset was cleaned, transformed, and analyzed to uncover patterns in salary distribution, missing data behavior, and variability across roles. Key statistical techniques such as skewness analysis, standard deviation, coefficient of variation, and quantile-based segmentation were applied to better understand the structure of the data.
 
-This project demonstrates strong capabilities in **data wrangling, statistical thinking, and business-oriented analysis**, making it highly relevant for entry-level data analyst roles.
+On the visualization side, Power BI was used to build interactive dashboards that highlight:
 
+* Global demand for different data roles
+* Salary comparisons across job titles and countries
+* Hiring trends over time
+* Skill and education requirements
+* Remote work and employment patterns
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 GLOBAL DATA JOBS ANALYSIS/
@@ -26,13 +27,13 @@ GLOBAL DATA JOBS ANALYSIS/
 |   └── datajobs_visualization.pbit
 |   └── visualization.pdf
 │   └── job_analysis_images/
-|        └── job_postings_flat.csv
-|        └── job_postings_flat.csv
-|        └── job_postings_flat.csv
-|        └── job_postings_flat.csv
-|        └── job_postings_flat.csv
-|        └── job_postings_flat.csv
-|        └── job_postings_flat.csv
+|        └── data_tables.jpg
+|        └── jobs_density.jpg
+|        └── data_jobs_percent_analysis.jpg
+|        └── jobs_median_salary.jpg
+|        └── key_performance_indicator.jpg
+|        └── quarterly_matrix.jpg
+|        └── trend_analysis.jpg
 |     
 ├── datajobs_venv/                  # Virtual environment (not tracked)
 ├── datajobs_analysis.ipynb         # Main analysis notebook
@@ -42,132 +43,108 @@ GLOBAL DATA JOBS ANALYSIS/
 ├── LICENSE
 ```
 
----
-
 ## Power BI Dashboard & Visual Insights
 
 Power BI was used as the primary visualization and business intelligence tool in this project. While Python handled statistical validation and data preparation, Power BI enabled interactive exploration, trend analysis, and decision-focused insights.
 
 Below are the key dashboards and insights derived:
 
-🌍 1. Global Job Distribution & Role Comparison
+### 1. Global Job Distribution & Role Comparison
 
- Insights:
+![Dashboard](job_analysis_images/quarterly_matrix.jpg)
 
-Data Engineer roles dominate hiring volume, followed by Data Analyst and Data Scientist roles
+#### Key Insights:
 
-Despite lower volume, Cloud Engineers and Machine Learning Engineers command higher salaries
+* Data Engineer roles dominate hiring volume, followed by Data Analyst and Data Scientist roles
+* Despite lower volume, Cloud Engineers and Machine Learning Engineers command higher salaries
+* Senior roles show higher compensation but lower job counts, indicating specialization
 
-Senior roles show higher compensation but lower job counts, indicating specialization
+#### Business Understanding:
 
- Business Understanding:
+* The market favors data infrastructure roles (Data Engineering)
+* High-paying roles are skill-intensive and less saturated
+---
 
-The market favors data infrastructure roles (Data Engineering)
+### 2. Salary Comparison Across Top Countries
 
-High-paying roles are skill-intensive and less saturated
+![Dashboard](job_analysis_images/jobs_median_salary.jpg)
 
-💰 2. Highest Paying Data Roles
+#### Key Insights:
 
-📌 Insights:
+* Senior Data Scientist (~$156K) and Machine Learning Engineer (~$155K) are the top-paying roles
+* Followed by Senior Data Engineer and Software Engineer roles
+* Entry-level roles like Data Analyst (~$90K) are significantly lower
+* Countries like the USA, UK, and Germany offer higher salaries
+* India shows lower salary levels, but similar role hierarchy
+* Senior Data Engineer and Data Scientist roles dominate globally
 
-Senior Data Scientist (~$156K) and Machine Learning Engineer (~$155K) are the top-paying roles
+#### Business Understanding:
+* Compensation strongly correlates with Experience(Senior roles),Technical depth(Machine Learning,Engineering)
+* Clear geographic salary disparity
+* Supports global hiring cost strategies
+---
 
-Followed by Senior Data Engineer and Software Engineer roles
+### 3. Hiring Trends Over Time (2026)
 
-Entry-level roles like Data Analyst (~$90K) are significantly lower
+![Dashboard](job_analysis_images/trend_analysis.jpg)
 
-📌 Business Understanding:
+#### Key Insights:
 
-Compensation strongly correlates with:
+* Hiring peaks during July–September
+* Hiring drops in November–December
+* Trend consistent across roles
 
-Experience (Senior roles)
+#### Business Understanding:
 
-Technical depth (ML, Engineering)
+* Reflects seasonal hiring cycles
+* End-of-year slowdown due to budget constraints
+---
 
-🌎 3. Salary Comparison Across Top Countries
+### 4. Skills vs Degree & Work Trends
 
-📌 Insights:
+![Dashboard](job_analysis_images/data_jobs_percent_analysis.jpg)
 
-Countries like the USA, UK, and Germany offer higher salaries
+#### Key Insights:
 
-India shows lower salary levels, but similar role hierarchy
+* ~33% of jobs do not require a degree
+* Senior roles more likely to mention degrees
+* ~87% jobs allow remote work, yet ~91% are full-time
 
-Senior Data Engineer and Data Scientist roles dominate globally
+#### Business Understanding:
 
-📌 Business Understanding:
+* Shift toward skills-first hiring
+* Remote work is normalized, but job structure remains traditional
+---
 
-Clear geographic salary disparity
+### 5. Global Job Density Map
 
-Supports global hiring cost strategies
+![Dashboard](job_analysis_images/jobs_density.jpg)
 
-📈 4. Hiring Trends Over Time (2026)
-
-📌 Insights:
-
-Hiring peaks during July–September
-
-Hiring drops in November–December
-
-Trend consistent across roles
-
-📌 Business Understanding:
-
-Reflects seasonal hiring cycles
-
-End-of-year slowdown due to budget constraints
-
-🧠 5. Skills vs Degree & Work Trends
-
-📌 Insights:
-
-~33% of jobs do not require a degree
-
-Senior roles more likely to mention degrees
-
-~87% jobs allow remote work, yet ~91% are full-time
-
-📌 Business Understanding:
-
-Shift toward skills-first hiring
-
-Remote work is normalized, but job structure remains traditional
-
-🌐 6. Global Job Density Map
-
-📌 Insights:
+#### Key Insights:
 
 High job density in:
 
-North America
+* North America
+* Europe
+* India (emerging hub)
+* Lower presence in developing regions
 
-Europe
+#### Business Understanding:
 
-India (emerging hub)
+* Data jobs cluster in tech-driven economies
+* Emerging markets show growth potential
 
-Lower presence in developing regions
-
-📌 Business Understanding:
-
-Data jobs cluster in tech-driven economies
-
-Emerging markets show growth potential
-
-🎯 Final Power BI Insights
+### Final Power BI Insights
 
 Data Engineering is the most in-demand role globally
-
 Senior roles command significantly higher salaries
-
 Strong geographic salary inequality exists
-
 Hiring follows seasonal patterns
-
 Industry is shifting toward skills over degrees
-
 Remote work is common, but full-time roles dominate
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * **Python**
 * **Pandas** – Data manipulation
@@ -177,7 +154,7 @@ Remote work is common, but full-time roles dominate
 
 ---
 
-## 🧹 Data Cleaning & Preparation
+## Data Cleaning & Preparation
 
 Key preprocessing steps performed:
 
@@ -189,7 +166,7 @@ Key preprocessing steps performed:
 
 ---
 
-## 📊 Key Analyses Performed
+## Key Analyses Performed
 
 ### 1. Salary Distribution Analysis
 
@@ -295,5 +272,3 @@ This project is part of my journey to becoming a highly skilled data analyst. It
 ## License
 
 This project is licensed under the terms of the LICENSE file included in this repository.
-
----
