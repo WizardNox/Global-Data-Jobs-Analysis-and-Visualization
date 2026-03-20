@@ -43,6 +43,64 @@ GLOBAL DATA JOBS ANALYSIS/
 ├── LICENSE
 ```
 
+---
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Dreamy100/Global-Data-Jobs-Analysis-and-Visualization.git
+cd data-jobs-eda
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate the Virtual Environment
+
+* **Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+* **Mac/Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the Project
+
+Open the Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then navigate to the main notebook file and run all cells.
+
+---
+
+## Project Setup Notes
+
+* Ensure the dataset is located inside the `data/` folder
+* File paths in the notebook are configured using relative paths for portability
+* All required libraries are listed in `requirements.txt`
+---
+
+---
 ## Power BI Dashboard & Visual Insights
 
 Power BI was used as the primary visualization and business intelligence tool in this project. While Python handled statistical validation and data preparation, Power BI enabled interactive exploration, trend analysis, and decision-focused insights.
