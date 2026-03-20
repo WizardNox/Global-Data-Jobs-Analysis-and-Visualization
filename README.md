@@ -100,7 +100,6 @@ Then navigate to the main notebook file and run all cells.
 * All required libraries are listed in `requirements.txt`
 ---
 
----
 ## Power BI Dashboard & Visual Insights
 
 Power BI was used as the primary visualization and business intelligence tool in this project. While Python handled statistical validation and data preparation, Power BI enabled interactive exploration, trend analysis, and decision-focused insights.
